@@ -1,0 +1,13 @@
+<script>
+	//Простым запуском файла работоспособность кода проверить нельзя, так как куки файлы работают только при наличии у сайта домена.
+	//Для того, что бы увидеть результат, необходимо на любом сайте в консоли написать следующий скрипт. Результат будет в самом низу страницы.
+	//Для наглядности, попробуйте разные сайты.
+	
+	let ul = document.createElement('ul');
+	document.body.append(ul);
+	let data = document.cookie.split(';');
+	for (let i = 0; i<data.length; i++) { let li = document.createElement('li'); li.textContent = data[i]; ul.append(li); }
+
+</script>
+
+</html>
